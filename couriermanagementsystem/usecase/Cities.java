@@ -14,7 +14,7 @@ public enum Cities {
     }
 
     public static int getoffer(String source, int pay){
-        offer= Integer.parseInt(String.valueOf(Cities.valueOf(toUpperCase(source)).getdiscount()));
+        offer= Cities.valueOf(toUpperCase(source)).getdiscount();
         pay= pay - offer*pay/100;
         System.out.println("Discount : "+offer+"%");
         return pay;
